@@ -24,7 +24,7 @@ def main(message):
 def start(message):
     markup = types.ReplyKeyboardMarkup()
     markup.add(types.KeyboardButton('Начнем наше приключение!'))
-    markup.add(types.KeyboardButton('Продолжим с того момента, где остановились)'))
+    #markup.add(types.KeyboardButton('Продолжим с того момента, где остановились)'))
     markup.add(types.KeyboardButton('Проверка корректности'))
     bot.send_message(message.chat.id,
                      f'Добрый день, соискатель приключений! Давай же поскорее отправимся в путь, выбери в меню нужное действие',
@@ -240,7 +240,7 @@ def on_click2(message):
     markup2.add(types.KeyboardButton('Парусник: более медленный, но экологичный выбор'))
     markup2.add(types.KeyboardButton(
         'Корабль: универсальное средство, которое обеспечит безопасность и комфорт в длительном плавании'))
-    markup2.add(types.KeyboardButton('Плот: экстремальный выбор для тех, кто ищет приключения'))
+   # markup2.add(types.KeyboardButton('Плот: экстремальный выбор для тех, кто ищет приключения'))
     bot.send_photo(message.chat.id, 'https://disk.yandex.ru/i/f6Fp_wc83WSBlQ',
                    caption='Ты подходишь к порту и перед тобой становится задача выбрать, на чём ты отправишься в '
                            'плаванье?',
